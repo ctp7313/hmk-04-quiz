@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Coding Quiz</title>
+  </head>
+  
+  <body>
+    <!-- High Score and Timer -->
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div class="col-sm-3" id="highscores">
+                View High Scores
+            </div>
+            <div class="col-sm-3" id="timer">
+                Time :<span id="seconds">00</span>
+            </div>
+        </div>
+    </div>
+    <!-- Quiz -->
+    <div class="container mt-3" id="quiz">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h3 id="question"></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <button type="button" class="btn btn-primary mt-1" id="answer_1"></button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <button type="button" class="btn btn-primary mt-1" id="answer_2"></button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <button type="button" class="btn btn-primary mt-1" id="answer_3"></button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <button type="button" class="btn btn-primary mt-1" id="answer_4"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="questions.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  </body>
+</html>
