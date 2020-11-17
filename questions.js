@@ -1,4 +1,3 @@
-var question = document.getElementById("#question")
 var multChoice = document.getElementById("#answer_1")
 
 

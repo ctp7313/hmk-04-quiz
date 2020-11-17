@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Coding Quiz</title>
+  </head>
+  
+  <body>
+    <!-- High Score and Timer -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+            <div class="col-sm-3" id="highscores">
+                <button onClick="highScore()" id="scores" class="btn" class="btn btn-success">View High Scores</button>
+            </div>
+            <div class="col-sm-3 text-light">
+                Timer:<span id="timer"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Screen -->
+    <div class="container mt-3" id="startScreen">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h1>It's Quiz Time!</h1>
+                <p>Press Start to get quizzin'</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <button type="button" class="btn btn-primary mt-1" id="quizStart" onClick="quizStart()">Start</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- Container for Questions -->
+    <div class="container mt-3" id="questionContainer">
+        <div class="row justify-content-center">
+            <p id="question"></p>
+            </br>
+            <p id="response"></p>
+        </div>
+    </div>
+
+    <!-- End Score -->
+    <div class="container mt-3" id="endScore" style="display: none">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h1>That's It!</h1>
+                <p>Here's your final score:</p><span id="score"></span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <form>
+                    <form-group>
+                        <label>
+                            Enter initials
+                        </label>
+                        <input type="text" id="initials" />
+                    </form-group>
+                </form>
+                <button type="button" class="btn btn-primary mt-1" id="save" onClick="saveScore()">Save Score</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
